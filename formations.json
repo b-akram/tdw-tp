@@ -1,0 +1,41 @@
+{
+    "formations": [{
+            "name": "WEb2",
+            "volume": "45h",
+            "price": 2000,
+            "tax": 17,
+            "subFormations":["word" ,"excel " ,"powerPoint"]
+        },
+        
+        {
+            "name": "Infographie",
+            "volume": "45h",
+            "price": 1500,
+            "tax": 17,
+            "subFormations":["word" ,"excelG " ,"powerPoint"]
+        },
+        {   
+            "name": "Langues",
+            "volume": "45h",
+            "price": 100,
+            "tax": 17,
+            "subFormations":["word" ,"excel " ,"powerPoint"]
+        },
+        {
+            "name": "Management",
+            "volume": "45h",
+            "price": 100,
+            "tax": 17 ,
+            "subFormations":["word" ,"excel " ,"powerPoint"]
+        }
+        ,
+        {
+            "name": "Compatibilite",
+            "volume": "45h",
+            "price": 100,
+            "tax": 17 ,
+            "subFormations":["word" ,"excel " ,"powerPoint"]
+        }
+
+    ]
+}

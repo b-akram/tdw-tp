@@ -1,0 +1,294 @@
+@keyframes diapo {
+    from {
+        transform: translateX(0)
+    }
+
+    10% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(-25%)
+    }
+
+    50% {
+        transform: translateX(-50%)
+    }
+
+    75% {
+        transform: translateX(-75%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+
+
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+* {
+    box-sizing: border-box;
+}
+input{
+    padding: 5px 10px ;
+    font-size: 15px ;
+    margin: 5px;
+    display: inline-block;
+    border-width: 0 0 2px 0  ;
+    border-color: orangered ;
+    outline: none;
+    border-radius: 5px 5px 0 0
+}
+input:focus{
+    background: rgba(235, 215, 160, 0.24);
+}
+.center {
+    text-align: center;
+}
+
+body {
+    padding: 50px;
+    margin: 25px;
+    border: 2px solid red;
+}
+
+.lien {}
+
+ul a:hover {}
+
+
+.formations {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: rgb(133, 135, 167)
+}
+
+.formation {
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+
+
+}
+
+.formation ol {
+    position: absolute;
+    top: 100%;
+    background: red;
+    display: none;
+    min-width: 100%
+}
+
+.formation:hover ol {
+    display: block
+}
+
+
+
+.table {
+    width: 100%
+}
+
+.table thead {
+    background: red;
+}
+
+.table th,
+.table td:nth-child(1) {
+    background: blue;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-family: fantasy;
+    color: red
+}
+
+img {
+    filter: blur(3px)
+}
+
+img:hover {
+    filter: none;
+    transform: scale(1.1)
+}
+
+.logo img {}
+
+.logo h1 {
+    display: inline-block;
+}
+
+.img-presentation {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.img-presentation:hover .wr {
+    animation-play-state: paused;
+    transform: scale(1.2)
+}
+
+.img-presentation .wrapper {
+    display: inline-block;
+    width: calc(25% - 20px);
+    border-width: 0 20px 0 0;
+    border-style: solid;
+    border-color: black;
+    text-align: center
+}
+
+.img-presentation .wr {
+    min-width: 400%;
+    animation-name: diapo;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+
+.img-presentation img {
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+
+}
+
+video {
+    width: 100%;
+    margin: 10px
+}
+
+.hidden {
+    display: none
+}
+
+
+.float-right {
+    float: right;
+}
+
+
+footer {
+    display: flex;
+    align-items: center
+}
+
+footer .contact {
+    flex-grow: 1;
+    flex-basis: 0
+}
+
+.add-formation {
+    padding: 20px;
+    flex-grow: 2;
+    flex-basis: 0;
+    text-align: center ;
+    
+}
+.add-formation>*{
+    margin: 0
+}
+.add-formation form{
+    border:2px solid orangered ;
+    border-width: 0 2px 2px  ;
+    margin: 0;
+    padding: 10px
+}
+
+.add-formation span {
+    display: inline-block;
+    min-width: 80px;
+    text-align: end;
+}
+
+.add-formation input[type="submit"] ,input[type="file"] ,button {
+    background-color: rgb(60, 156, 111);
+    padding: 5px 20px;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    font-variant: small-caps;
+    cursor: pointer;
+    transition: background-color 1s
+}
+button{
+    background: orangered;
+}
+.add-formation input[type="submit"]:hover{
+    background: rgb(21, 83, 34);
+}
+
+.add-formation input[type="submit"]:focus {
+    outline: none
+}
+.add-formation .row-info{
+    padding: 20px  
+}
+.row-info span{
+    font-weight: bold ;
+    text-transform: capitalize;
+    font-size: 18px ;
+    font-variant: small-caps
+}
+.head {}
+
+.d-flex {
+    display: flex;  
+}
+
+.d-flex>* {
+    text-align: center;
+    padding: 10px 0 0   0     ;
+    margin: 0 ;
+    color: white; 
+    font-weight: bold ;
+    font-size: 1.3rem
+}
+
+.add-formation .col {
+    flex: 1 0 0;
+
+}
+
+.manuel {
+    background: rgb(66, 75, 156);
+}
+.manuel .line{
+}
+.file {
+    background: rgb(41, 102, 59);
+}
+.file .line{
+    display: none;
+
+}
+.add-formation .col .line{
+    border: 2px solid orangered ;
+    margin:  0  ;
+    
+}
+#file{
+    display: none;
+}
+#manuel>*,#file>*{
+    margin: 10px 
+}
+ 
+#file table{
+    width: calc(100% - 20px);
+}
